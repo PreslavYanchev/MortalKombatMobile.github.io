@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortal Kombat Mobile-everything you need to know</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+         *{
+            font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+        }
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-image: url(https://i.pinimg.com/originals/61/9f/bc/619fbc52e2d8ab21dff5c90562bbafa5.jpg);
+        }
+
+        .nav-bar {
+            background-color: rgb(136, 131, 131);
+            position: fixed; 
+            top: 0; 
+            width: 100%; 
+            padding: 10px 0;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            z-index: 10; 
+            box-shadow: 0 2px 4px rgba(255, 252, 252, 0.1); 
+            transition: background-color 0.3s ease; 
+        }
+
+        .header.sticky {
+            background-color: rgb(136, 131, 131);
+        }
+        .nav-logo {
+            display: inline-block;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 10px;
+        }
+
+        .nav-link {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: 18px;
+            transition: background-color, color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: #000000;
+            color: #ffffff; 
+        }
+
+        
+        @media (max-width: 768px) {
+            .nav-bar {
+                flex-direction: column;
+            }
+
+            .nav-logo {
+                margin-bottom: 10px; 
+                
+            }
+
+            .nav-links {
+                display: none; 
+            }
+
+            .nav-bar.active .nav-links {
+                display: flex; 
+                flex-direction: column;
+            }
+
+            .nav-toggle {
+                display: block;
+                width: 30px;
+                height: 30px;
+                background-color: rgb(0, 0, 0);
+                cursor: pointer;
+            }
+
+            .nav-toggle:before,
+            .nav-toggle:after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 5px;
+                background-color: #00a5cf;
+                margin-top: 5px;
+            }
+
+            .nav-toggle.active:before {
+                transform: rotate(-45deg); 
+            }
+
+            .nav-toggle.active:after {
+                transform: rotate(45deg); 
+            }
+        }
+</style>
+
+        <script>
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 20) {
+                    document.querySelector('.nav-bar').classList.add('sticky');
+                } else {
+                    document.querySelector('.nav-bar').classList.remove('sticky');
+                }
+            });
+        </script>
+<style>
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 5em 0 0 0;
+    padding: 0;
+    line-height: 1.6;
+    word-spacing: 1.4px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--clr-dark);
+    background-color: var(--clr-light);
+  }
+  
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    border: 10px solid var(--clr-dark);
+  }
+  
+  .item {
+    padding: 0.5em;
+    justify-items: center;
+    align-items: center;
+    font-weight: 700;
+    color: var(--clr-light);
+    border: 10px solid var(--clr-accent);
+  }
+  hr{
+    border-top: 30px solid rgb(102, 100, 100);
+    border-radius: 100px;
+  }
+</style>
+<style>
+    .container {
+    display: grid;
+    grid-template-rows: 100px 50px repeat(3, 100px) 50px 100px 50px repeat(10,100px);
+    grid-template-columns: repeat(19,100px);
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    color: #ffffff;
+  }
+  
+  .item-1{
+  grid-column: 9/12;
+  grid-row: 1/4;
+  }
+  .item-2{
+    grid-row: 2/3;
+    grid-column: 13/19;
+  }
+  .quests{
+    grid-row: 2/3;
+    grid-column: 2/5;
+  }
+  .item-3{
+    grid-row: 2/3;
+    grid-column: 5/13;
+   }
+   .item-4{
+    grid-row: 5/8;
+    grid-column: 2/10;
+   }
+   .item-5{
+    grid-row: 8/11;
+    grid-column: 4/8;
+   }
+   .item-6{
+    grid-row: 5/6;
+    grid-column: 13/15;
+   }
+   .item-7{
+    grid-row: 6/8;
+    grid-column: 10/19;
+   }
+   .item-8{
+    grid-row: 8/11;
+    grid-column: 10/19;
+   }
+   .ShaoKahn{
+    grid-row: 12/13;
+    grid-column: 4/8;
+   }
+   .Info{
+    grid-row: 12/19;
+    grid-column: 2/6;
+   }
+   .image{
+    grid-row: 12/19;
+    grid-column: 6/10;
+   }
+   .RelicHunt{
+    grid-row: 12/13;
+    grid-column:13/15 ;
+   }
+   .RelicInfo{
+    grid-row: 12/19;
+    grid-column: 10/14;
+   }
+   .Relicimg{
+    grid-row: 14/17;
+    grid-column: 15/19;
+   }
+  h1{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+  }
+  p{
+    font-size: 23px;
+  }
+</style>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src="https://1000logos.net/wp-content/uploads/2021/04/Mortal-Kombat-logo.png" alt="Лого" width="100px" height="auto">
+            </div>
+            <ul class="nav-links">
+                <li><a href="mortal kombat.html" class="nav-link">Home</a></li><hr>
+                <li><a href="Begginer guide.html" class="nav-link">Begginer guide</a></li><hr>
+                <li><a href="Game Modes.html" class="nav-link">Game Modes</a></li><hr>
+                <li><a href="Faction wars.html" class="nav-link">Faction wars</a></li><hr>
+                <li><a href="Contacts.html" class="nav-link">Contacts</a></li>
+            </ul>
+        </div>
+    </header>
+  
+   <h1>Game Modes</h1>
+    <div class="container">
+        <div class="item item-1"><h1>Quest Mode</h1></div>
+        <div class="item item-2"><h1>Outworld</h1><p>
+             Outworld is the first and easier one meanwhile Netherrealm is the 2nd and alot harder one. If you just started I'd suggest clicking  <a href="https://youtu.be/StjvLKZjOMM?si=F1KTspC4eCd8Brqk">here</a>, but if you are more advanced I'd suggest you <a href="https://youtu.be/NoUuQsJQpts?si=9pvb-BXsD7SYqYeS">this</a> which is another useful video from Mand in which 
+            you'll find out the best quests in the outworld.</p></div>
+            <div class="item quests"><p>Quest mode is an AFK game mode in which you set your characters to complete certain quests for certain time.There are also 2 worlds "Outworld" and "Netherrealm".</p></div>
+        <div class="item item-3"><img style="border-radius: 10px;" src="Quest_Mode_with_Secret_Klassic_Reptile_Tower.webp" width="560px" height="265px"></div>
+        <div class="item item-4"><h1>Netherrealm</h1><p>As I just mentioned Netherrealm is a lot harder as the quests require higher character fusion, but as you can see <a href="https://youtu.be/Yk4cklCniOw?si=E9LuMGk3yDF_Yvqk">here</a> the difference in the rewards isn't that big. </p></div>
+        <div class="item item-5"><img style="border-radius: 10px;" src="Netherrealmquests.webp" width="560px" height="265px"></div>
+        <div class="item item-6"><h1>Battle Mode</h1></div>
+        <div class="item item-7"><p>Battle Mode is a single player mode in which the player fights a series of Towers with any assigned team, progressing through to level up their characters, their profile and acquire Coins and Souls. Additionally, there are chances for Equipment awards, however these items are the lowest graded items.</p></div>
+        <div class="item item-8"><img style="border-radius: 10px;" src="https://resource.appgamer.com/library/appgamer/740w/2015/143537229906.webp" width="560px" height="265px"></div>
+        <div class="item ShaoKahn"><h1>Shao Kahn Tower</h1></div>
+        <div class="item Info"><p>Shao Kahn's Tower is a game mode introduced in Update 1.11. It is a battle tower of 100 battles that awards Koins, Souls, Spirit Fragments and the exclusive Talent Points, which are used in the Talent Tree. The battles get progressively harder, starting with level 1 silver characters to much harder golds and possibly diamonds. The Tower finishes with a Fusion 7 & Level 50 diamond team. This tower is the way to get Spirit Fragments when Relic Hunt is not live.</p></div>
+        <div class="item image"><img src="https://th.bing.com/th/id/OIP.z3YLCIQlEMJGIwWeX8oxQgHaFu?rs=1&pid=ImgDetMain" width="400px" height="400"></div>
+        <div class="item RelicHunt"><h1>Relic hunt</h1></div>
+        <div class="item RelicInfo"><p> Mk Mobile Relic Hunt is a special event. This event will be available for 7 days. Relic hunt will have 5 towers, each tower has specific requirements and Boss. After you win all the fights you can resurrect Shao Kahn.<br>To resurrect Shao Kahn you need Spirit Fragments which can be collected by playing the Shao Kahn’s Tower. Spirit Fragments requirements will increase every time you fuse Shao Kahn. Starting from 27 shards at fusion 0 and ending on 1330 shards on fusion 10</p></div>
+        <div class="item Relicimg"><img src="https://i.ytimg.com/vi/xWU4ntb1CuI/hqdefault.jpg"></div>
+      </div>
+      
+</body>
+</html>

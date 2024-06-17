@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortal Kombat Mobile-everything you need to know</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+        }
+        body {
+            font-family: sans-serif;
+            background-image: url(https://i.pinimg.com/originals/61/9f/bc/619fbc52e2d8ab21dff5c90562bbafa5.jpg);
+            margin: 0;
+        }
+
+        .nav-bar {
+          background-color: rgb(136, 131, 131);
+            position: fixed; 
+            top: 0; 
+            width: 100%; 
+            padding: 10px 0;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            z-index: 10; 
+            box-shadow: 0 2px 4px rgba(255, 252, 252, 0.1); 
+            transition: background-color 0.3s ease; 
+        }
+
+        .header.sticky {
+          background-color: rgb(136, 131, 131);
+        }
+        .nav-logo {
+            display: inline-block;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 10px;
+        }
+
+        .nav-link {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: 18px;
+            transition: background-color, color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: #000000;
+            color: #ffffff; 
+        }
+
+        
+        @media (max-width: 768px) {
+            .nav-bar {
+                flex-direction: column;
+            }
+
+            .nav-logo {
+                margin-bottom: 10px; 
+                
+            }
+
+            .nav-links {
+                display: none; 
+            }
+
+            .nav-bar.active .nav-links {
+                display: flex; 
+                flex-direction: column;
+            }
+
+            .nav-toggle {
+                display: block;
+                width: 30px;
+                height: 30px;
+                background-color: rgb(0, 0, 0);
+                cursor: pointer;
+            }
+
+            .nav-toggle:before,
+            .nav-toggle:after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 5px;
+                background-color: #00a5cf;
+                margin-top: 5px;
+            }
+
+            .nav-toggle.active:before {
+                transform: rotate(-45deg); 
+            }
+
+            .nav-toggle.active:after {
+                transform: rotate(45deg); 
+            }
+        }
+</style>
+
+        <script>
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 20) {
+                    document.querySelector('.nav-bar').classList.add('sticky');
+                } else {
+                    document.querySelector('.nav-bar').classList.remove('sticky');
+                }
+            });
+        </script>
+<style>
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 5em 0 0 0;
+    padding: 0;
+    line-height: 1.6;
+    word-spacing: 1.4px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--clr-dark);
+    background-color: var(--clr-light);
+  }
+  
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    border: 10px solid var(--clr-dark);
+  }
+
+  hr{
+    border-top: 30px solid rgb(102, 100, 100);
+    border-radius: 100px;
+  }
+</style>
+<style>
+    .container {
+    display: grid;
+    grid-template-rows: 100px 100px repeat(3, 100px) 100px 100px 50px 50px repeat(4,100px);
+    grid-template-columns: repeat(19,100px);
+    text-align: center;
+    color: #ffffff;
+  }
+  .item-1{
+  grid-column: 2/11;
+   grid-row: 1/2;
+  }
+  .item-2{
+  
+    grid-row: 2/4;
+    grid-column: 7/11;
+    padding-left: 150px;
+
+  }
+    .item-3{
+        grid-row: 2/4;
+        grid-column: 2/8;
+    }
+    .h1{
+      grid-row: 0/1;
+      grid-column: 14/18;
+    }
+    .p{
+      grid-row: 2/4;
+      grid-column: 12/19;
+    }
+  .item-4{
+    grid-column: 6/9;
+    grid-row: 6/7;
+  }
+  .item-5{
+    grid-row: 7/8;
+    grid-column: 4/12;
+  }
+  .list{
+    padding-bottom: 100px;
+    grid-row: 8/12;
+    grid-column: 8/12;
+  }
+  .item-6{
+    grid-row: 8/12;
+    grid-column: 2/8;
+  }
+  .store{
+    grid-row: 6/7;
+    grid-column: 14/18;
+  }
+  .storeinfo{
+    grid-row: 7/9;
+    grid-column: 11/19;
+  }
+  .storeimg{
+    grid-row: 9/11;
+    grid-column: 11/19;
+  }
+  h1{
+    color: #fdfdfd;
+    text-align: center;
+    font-size: 30px;
+  }
+  p{
+    font-size: 23px;
+  }
+</style>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src="https://1000logos.net/wp-content/uploads/2021/04/Mortal-Kombat-logo.png" alt="Лого" width="100px" height="auto">
+            </div>
+            <ul class="nav-links">
+                <li><a href="mortal kombat.html" class="nav-link">Home</a></li><hr>
+                <li><a href="Begginer guide.html" class="nav-link">Begginer guide</a></li><hr>
+                <li><a href="Game Modes.html" class="nav-link">Game Modes</a></li><hr>
+                <li><a href="Faction wars.html" class="nav-link">Faction Wars</a></li><hr>
+                <li><a href="Contacts.html" class="nav-link">Contacts</a></li>
+            </ul>
+        </div>
+        
+    </header>
+  
+   <h1>Faction Wars</h1>
+    <div class="container">
+        <div class="item item-1" style="font-size: 30px;"><p>Faction Wars is a game mode in which you matches you up with other players' teams for a 3v3 battle.When players are new to the game, they will be prompted to choose one out of five factions:</p></div>
+       <div class="item item-2">
+ <ul style="list-style: disc; font-size: 23px;">
+          <li>Black Dragon</li>
+          <li>Brotherhood of shadow</li>
+          <li>Lin Kuei</li>
+          <li>Special Forces</li>
+          <li>White Lotus</li>
+        </ul>
+    </div>
+       
+        <div class="item item-3"><img src="https://mortalkombatgamessupport.wbgames.com/hc/article_attachments/360038102493/IMG_1919.PNG" width="560px" height="265px" style="border-radius: 10px;"></div>
+        <div class="item h1"><h1>Faction wars season</h1></div>
+        <div class="item p"><p>Faction wars season season resets every 4 days and rewards you different based of your season rank. To rank up you need Battle Rating which is gathered by playing Quick Play or Survivor Mode. The rewards you get are blood rubies, equipment cards and if your rank is Kombatant I  or more you'll get a blood ruby pack.</p></div>
+        <div class="item img"></div>
+        <div class="item item-4"><h1>Quick Play</h1></div>
+        <div class="item item-5"><p>In Quick Play you choose in between 4 difficulties:<ul></p></div>
+            <div class="item list">
+                <dl style=" font-size: 23px;">
+            <dt>Quick Battle</dt>
+            <dd>-Includes 1 fight</dd>
+            <dt>Normal Battle</dt>
+            <dd>-Includes 3 battles</dd>
+            <dt>Hard Battle</dt>
+            <dd>-Includes 5 battles</dd>
+            <dt>Fatal Battle</dt>
+            <dd>-Includes 7 battles</dd>
+         </dl>
+    </div>
+        <div class="item item-6"><img src="https://mortalkombatgamessupport.wbgames.com/hc/article_attachments/360027587114" width="700px" height="350px" style="border-radius: 10px;"></div>
+      <div class="item store"><h1>Faction wars store</h1></div>
+      <div class="item storeinfo"><p>The Faction Wars Store is a store where characters can buy exclusive characters and Epic Equipment for the cost of Blood Rubies. This is the only use for Blood Rubies. The Faction Wars Store can be accessed through the main Faction Wars page.</p></div> 
+      <div class="item storeimg"><img src="https://preview.redd.it/faction-wars-store-v0-nv1zlzuxj2wa1.jpg?width=2400&format=pjpg&auto=webp&s=c6bdd0305d1796e614c6781299c49ba70a84e087" width="600px" height="300px" style="border-radius: 10px;"></div>
+    </div>
+</body>
+</html>

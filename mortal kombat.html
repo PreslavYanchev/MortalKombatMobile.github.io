@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortal Kombat Mobile-everything you need to know</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+       *{
+            font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+        }
+        body {
+            font-family: sans-serif;
+            background-image: url(https://i.pinimg.com/originals/61/9f/bc/619fbc52e2d8ab21dff5c90562bbafa5.jpg);
+            margin: 0;
+
+        }
+        body.background-image{
+          filter: blur(5px);
+        }
+
+        .nav-bar {
+          background-color: rgb(136, 131, 131);
+            position: fixed; 
+            top: 0; 
+            width: 100%; 
+            padding: 10px 0;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            z-index: 10; 
+            box-shadow: 0 2px 4px rgba(255, 252, 252, 0.1); 
+            transition: background-color 0.3s ease; 
+        }
+
+        .header.sticky {
+          background-color: rgb(136, 131, 131);
+        }
+        .nav-logo {
+            display: inline-block;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 10px;
+        }
+
+        .nav-link {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: 18px;
+            transition: background-color, color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: #000000;
+            color: #ffffff; 
+        }
+
+        
+        @media (max-width: 768px) {
+            .nav-bar {
+                flex-direction: column;
+            }
+
+            .nav-logo {
+                margin-bottom: 10px; 
+                
+            }
+
+            .nav-links {
+                display: none; 
+            }
+
+            .nav-bar.active .nav-links {
+                display: flex; 
+                flex-direction: column;
+            }
+
+            .nav-toggle {
+                display: block;
+                width: 30px;
+                height: 30px;
+                background-color: rgb(0, 0, 0);
+                cursor: pointer;
+            }
+
+            .nav-toggle:before,
+            .nav-toggle:after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 5px;
+                background-color: #00a5cf;
+                margin-top: 5px;
+            }
+
+            .nav-toggle.active:before {
+                transform: rotate(-45deg); 
+            }
+
+            .nav-toggle.active:after {
+                transform: rotate(45deg); 
+            }
+        }
+</style>
+
+        <script>
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 20) {
+                    document.querySelector('.nav-bar').classList.add('sticky');
+                } else {
+                    document.querySelector('.nav-bar').classList.remove('sticky');
+                }
+            });
+        </script>
+<style>
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 5em 0 0 0;
+    padding: 0;
+    line-height: 1.6;
+    word-spacing: 1.4px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--clr-dark);
+    background-color: var(--clr-light);
+  }
+  
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    border: 10px solid var(--clr-dark);
+  }
+  
+  .item {
+    padding: 0.5em;
+    
+    font-weight: 700;
+    color: var(--clr-light);
+    border: 10px solid var(--clr-accent);
+  }
+  hr{
+    border-top: 30px solid rgb(102, 100, 100);
+    border-radius: 100px;
+  }
+</style>
+<style>
+    .container {
+    display: grid;
+    grid-template-rows: 100px 50px repeat(3, 100px) 50px 100px 50px 100px repeat(4,100px);
+    grid-template-columns: repeat(19,100px);
+    text-align: center;
+    color: #ffffff;
+  }
+  .item-1{
+  grid-column: 9/12;
+   
+  }
+  .item-2{
+  
+    grid-row: 3/6;
+    grid-column: 2/13;
+  }
+    .item-3{
+        grid-row: 3/6;
+        grid-column: 13/19;
+    }
+  .item-4{
+    grid-column: 9/12;
+    grid-row: 7/8;
+  }
+  .item-5{
+    grid-row: 9/12;
+    grid-column: 2/13;
+  }
+  .item-6{
+    grid-row: 9/12;
+    grid-column: 13/19;
+  }
+  h1{
+    color: #fdfdfd;
+    text-align: center;
+    font-size: 30px;
+  }
+  p{
+    font-size: 23px;
+  }
+</style>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src="https://1000logos.net/wp-content/uploads/2021/04/Mortal-Kombat-logo.png" alt="Лого" width="100px" height="auto">
+            </div>
+            <ul class="nav-links">
+                <li><a href="mortal kombat.html" class="nav-link">Home</a></li><hr>
+                <li><a href="Begginer guide.html" class="nav-link">Begginer guide</a></li><hr>
+                <li><a href="Game Modes.html" class="nav-link">Game Modes</a></li><hr>
+                <li><a href="Faction wars.html" class="nav-link">Faction Wars</a></li><hr>
+                <li><a href="Contacts.html" class="nav-link">Contacts</a></li>
+            </ul>
+        </div>
+        
+    </header>
+  
+   <h1>Mortal Kombat Mobile</h1>
+    <div class="container">
+        <div class="item item-1"><h1>Introduction</h1></div>
+        <div class="item item-2"><p>Mortal Kombat Mobile is a mobile game featuring characters in the Mortal Kombat series. Originally a tie-in mobile game for Mortal Kombat X, it was released on April 7, 2015 on iOS devices and later released for Android devices on May 5, 2015, later expanding to include characters from Mortal Kombat X, Mortal Kombat (2011), Mortal Kombat 11, and Mortal Kombat 1, as well as versions of Mortal Kombat characters featured in the Injustice series. The name was changed to Mortal Kombat on February 27, 2019 in iOS devices, but it still officially referred to as Mortal Kombat Mobile.</p></div>
+        <div class="item item-3"><img src="https://cdn.dashfight.com/3c8c13cf152e1c7cda14b14adb4681ca7e9d55d7.png" width="560px" height="265px" style="border-radius: 10px;"></div>
+        <div class="item item-4"><h1>Gameplay</h1></div>
+        <div class="item item-5"><p>The game is based off a card-style playstyle, where characters, equipment and other aspects of the game are displayed as cards. Players always assign teams of 3 character cards, with additional cards equipped to increase the characters' stats. Character cards range from four different rankings; Bronze, Silver, Gold, and Diamond. Additional cards range from equipment and character support cards. Players can equip every character card with 3 cards of equipment, while Diamond characters gain a 4th equipment card of any slot.</p></div>
+        <div class="item item-6"><img src="https://play-lh.googleusercontent.com/0BPStvl3Pel4IICeGq1w7x6qizR3VZ8PyrXnplZGQGEAPrSJCthFmbuC9M4zPbmrafc=w526-h296-rw" width="560px" height="265px" style="border-radius: 10px;"></div>
+       
+      </div>
+</body>
+</html>
